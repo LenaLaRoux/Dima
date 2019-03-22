@@ -31,9 +31,11 @@ public class Main {
                         System.out.println("Ваше число меньше загаданного.");
                     }
                 }
+                
                 if (attempt == 0){
                     System.err.println("Игра завершена. Попытки, увы, иcсякли.");
                 }
+                
                 System.out.println("Хотите продолжить? '0' - да, '1' - нет");
                 answer = scanner.nextInt();
                 doNotContinue = answer == 1;
@@ -42,13 +44,10 @@ public class Main {
                     break;
                 } else if (attempt != 0){
                     System.out.println("У Вас осталось " + attempt + " попыток.");
-                }
+                } 
             }
         }
-        if (!isGuessed && !doNotContinue) {
-            System.out.println("Игра завершена. Попытки, увы, иcсякли.");
-
-        }
+        
         System.out.println("Увидимся позже.");
     }
 }
