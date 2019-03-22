@@ -7,14 +7,13 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         int number = (int) (Math.random() * 9);
-        int attempt = 0;
         boolean isGuessed = false;
         boolean doNotContinue = false;
         int answer;
         Scanner scanner = new Scanner(System.in);
 
         while (!doNotContinue) {
-            for (attempt = 2; attempt >= 0; attempt--) { // сновной цикл с счетчиком попыток, их свего 3
+            for (int attempt = 2; attempt >= 0; attempt--) { // сновной цикл с счетчиком попыток, их свего 3
 
                 System.out.print("Угадайте число от 0 до 9: ");
 
