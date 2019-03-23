@@ -46,7 +46,7 @@ public class Main {
                 } 
             }
         }
-        
-        System.out.println("Увидимся позже.");
+        if (doNotContinue)
+            System.out.println("Увидимся позже.");
     }
 }
